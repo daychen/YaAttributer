@@ -81,8 +81,6 @@
 		8D34A22D1B5684A2004866E3 /* YaAttributer */ = {
 			isa = PBXGroup;
 			children = (
-				8D34A2321B5684A2004866E3 /* AppDelegate.h */,
-				8D34A2331B5684A2004866E3 /* AppDelegate.m */,
 				8D34A2351B5684A2004866E3 /* ViewController.h */,
 				8D34A2361B5684A2004866E3 /* ViewController.m */,
 				8D34A2381B5684A2004866E3 /* Main.storyboard */,
@@ -96,6 +94,8 @@
 		8D34A22E1B5684A2004866E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D34A2321B5684A2004866E3 /* AppDelegate.h */,
+				8D34A2331B5684A2004866E3 /* AppDelegate.m */,
 				8D34A22F1B5684A2004866E3 /* Info.plist */,
 				8D34A2301B5684A2004866E3 /* main.m */,
 			);
