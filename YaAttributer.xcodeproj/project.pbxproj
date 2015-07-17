@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63B93CD11B58EFC300EAFC52 /* TextStatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B93CD01B58EFC300EAFC52 /* TextStatViewController.m */; };
 		8D34A2311B5684A2004866E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D34A2301B5684A2004866E3 /* main.m */; };
 		8D34A2341B5684A2004866E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D34A2331B5684A2004866E3 /* AppDelegate.m */; };
 		8D34A2371B5684A2004866E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D34A2361B5684A2004866E3 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63B93CCF1B58EFC300EAFC52 /* TextStatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatViewController.h; sourceTree = "<group>"; };
+		63B93CD01B58EFC300EAFC52 /* TextStatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatViewController.m; sourceTree = "<group>"; };
 		8D34A22B1B5684A2004866E3 /* YaAttributer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaAttributer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D34A22F1B5684A2004866E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D34A2301B5684A2004866E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 				8D34A2351B5684A2004866E3 /* ViewController.h */,
 				8D34A2361B5684A2004866E3 /* ViewController.m */,
 				8D34A2381B5684A2004866E3 /* Main.storyboard */,
+				63B93CCF1B58EFC300EAFC52 /* TextStatViewController.h */,
+				63B93CD01B58EFC300EAFC52 /* TextStatViewController.m */,
 				8D34A23B1B5684A2004866E3 /* Images.xcassets */,
 				8D34A23D1B5684A2004866E3 /* LaunchScreen.xib */,
 				8D34A22E1B5684A2004866E3 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				8D34A2371B5684A2004866E3 /* ViewController.m in Sources */,
 				8D34A2341B5684A2004866E3 /* AppDelegate.m in Sources */,
 				8D34A2311B5684A2004866E3 /* main.m in Sources */,
+				63B93CD11B58EFC300EAFC52 /* TextStatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,8 +354,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YaAttributer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,8 +366,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YaAttributer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -416,6 +426,7 @@
 				8D34A2501B5684A2004866E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D34A2511B5684A2004866E3 /* Build configuration list for PBXNativeTarget "YaAttributerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +435,7 @@
 				8D34A2531B5684A2004866E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
