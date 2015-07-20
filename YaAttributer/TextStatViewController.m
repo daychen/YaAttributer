@@ -17,6 +17,11 @@
 @implementation TextStatViewController
 
 
+
+-(void)viewDidLoad{
+    
+ 
+}
 -(void)setTextAnalysis:(NSAttributedString *)textAnalysis{
 
     _textAnalysis=textAnalysis;
@@ -40,6 +45,15 @@
     int index=0;
     while (index<[self.textAnalysis length]) {
         
+        NSRange range;
+        id value=[self.textAnalysis attribute:attributeName atIndex:index effectiveRange:&range];
+        
+        if (value) {
+            [characters appendAttributedString:[self.textAnalysis attributedSubstringFromRange:range]];
+            index+=index+range.length;
+        }else{
+            index++;
+        }
         
     }
     
@@ -50,6 +64,12 @@
 
 -(void)updateUI{
     
+  
+    
+    int colorcharcount=  [[self charactersWithAttribute:NSForegroundColorAttributeName] length];
+    self.colorTextLabel.text=[NSString stringWithFormat:@"%d colorful characters",colorcharcount];
+    
+    self.strokeTextLabel.text=[NSString stringWithFormat:@"%d stroked characters",[[self charactersWithAttribute:NSStrokeWidthAttributeName] length]];
     
     
 }
